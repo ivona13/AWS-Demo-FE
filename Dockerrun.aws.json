@@ -1,0 +1,17 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+      {
+        "name": "aws-fe",
+        "image": "public.ecr.aws/y2x5g3k7/code-of-us-public:fe",
+        "essential": true,
+        "memory": 128,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 80
+          }
+        ]
+      }
+    ]
+  }
