@@ -1,0 +1,11 @@
+services:
+  web:
+    image: public.ecr.aws/y2x5g3k7/code-of-us-public:fe
+    container_name: aws-fe
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - DEBUG=1
